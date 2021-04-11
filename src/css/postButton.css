@@ -1,0 +1,44 @@
+.postButton {
+  position: fixed;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 100;
+}
+
+.postButton__inner {
+  background-color: #333333;
+  /* ? box shadow */
+  -webkit-box-shadow: 0 2.4px 1.9px rgba(0, 0, 0, 0.028),
+    0 5.6px 4.3px rgba(0, 0, 0, 0.041), 0 10.3px 7.7px rgba(0, 0, 0, 0.051),
+    0 17.3px 12.8px rgba(0, 0, 0, 0.059), 0 28.5px 21.2px rgba(0, 0, 0, 0.069),
+    0 49.5px 37px rgba(0, 0, 0, 0.082), 0 100px 80px rgba(0, 0, 0, 0.11);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 2.4px 1.9px rgba(0, 0, 0, 0.028),
+    0 5.6px 4.3px rgba(0, 0, 0, 0.041), 0 10.3px 7.7px rgba(0, 0, 0, 0.051),
+    0 17.3px 12.8px rgba(0, 0, 0, 0.059), 0 28.5px 21.2px rgba(0, 0, 0, 0.069),
+    0 49.5px 37px rgba(0, 0, 0, 0.082), 0 100px 80px rgba(0, 0, 0, 0.11);
+  /* Firefox 3.5 - 3.6 */
+
+  box-shadow: 0 2.4px 1.9px rgba(0, 0, 0, 0.028),
+    0 5.6px 4.3px rgba(0, 0, 0, 0.041), 0 10.3px 7.7px rgba(0, 0, 0, 0.051),
+    0 17.3px 12.8px rgba(0, 0, 0, 0.059), 0 28.5px 21.2px rgba(0, 0, 0, 0.069),
+    0 49.5px 37px rgba(0, 0, 0, 0.082), 0 100px 80px rgba(0, 0, 0, 0.11);
+
+  width: 76px;
+  height: 39px;
+  color: white !important;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 378px) {
+  .postButton__inner {
+    width: 96px;
+    height: 55px;
+  }
+}
